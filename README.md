@@ -71,6 +71,7 @@ async function serve(request) {
   }
 }
 
+// https://github.com/TomasHubelbauer/mime-multipart
 function* parseMimeMultipart(/** @type {Uint8Array} */ uint8Array) {
   const textDecoder = new TextDecoder();
   /** @typedef {{ name: string; values: string[]; }} Header */
