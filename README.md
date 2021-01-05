@@ -2,7 +2,7 @@
 
 CloudFlare Workers supports getting a `FormData` instance from the request using
 `request.formData()`. However, the resulting `FormData` instance, when used with
-`formData.get('file')`, does not return a `File instance (inclusive of the file
+`formData.get('file')`, does not return a `File` instance (inclusive of the file
 name and type), but a string representation of the file's contents. While it may
 be possible to use `charCodeAt` to construct a `Uint8Array` from the string and
 recover the file's binary contents this way, access to the file name and type is
