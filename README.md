@@ -59,7 +59,7 @@ async function serve(request) {
     }
 
     if (parts.length > 1) {
-      return new Response('To many parts!');
+      return new Response('Too many parts!');
     }
 
     const [part] = parts;
