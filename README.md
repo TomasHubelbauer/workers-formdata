@@ -11,7 +11,7 @@ seemingly impossible.
 I've opened a thread on the CloudFlare Community site for this:
 https://community.cloudflare.com/t/worker-formdata-get-file-instance/155009
 
-This might get fixed, it might now, I don't know. Meanwhile, I've prototyped a
+This might get fixed, it might not, I don't know. Meanwhile, I've prototyped a
 basic MIME multipart parser, which is able to recover the file binary contents as
 well as the metadata (name and type). Find it here:
 
