@@ -219,3 +219,15 @@ function* parseMimeMultipart(/** @type {Uint8Array} */ uint8Array) {
   }
 };
 ```
+
+## To-Do
+
+### See if with Durable Objects and ESM this script could be a dependency
+
+https://developers.cloudflare.com/workers/cli-wrangler/configuration#modules
+
+Cloudflare Workers now seem to support ESM, but the questions remains if this is
+true ESM or some Wrangler bundling, and if so, if it supports pulling in HTTP
+modules as opposed to file protocol modules only.
+
+Would be good to try this while I still have Workers subscription.
