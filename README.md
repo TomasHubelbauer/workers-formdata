@@ -1,5 +1,8 @@
 # CloudFlare Workers `FormData`
 
+> Disclaimer: This should now be unnecessary!
+> See https://developers.cloudflare.com/workers/platform/compatibility-dates/#formdata-parsing-supports-file
+
 CloudFlare Workers supports getting a `FormData` instance from the request using
 `request.formData()`. However, the resulting `FormData` instance, when used with
 `formData.get('file')`, does not return a `File` instance (inclusive of the file
